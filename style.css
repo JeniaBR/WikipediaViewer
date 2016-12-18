@@ -2,3 +2,7 @@ header{
     display: block;
     background-color: violet;
 }
+
+ul {
+    list-style-type: none;
+}
