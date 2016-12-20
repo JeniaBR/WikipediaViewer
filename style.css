@@ -1,8 +1,57 @@
-header{
+header {
     display: block;
     background-color: violet;
 }
 
 ul {
     list-style-type: none;
+    padding: 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card {
+    margin-top: 1.5em;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-clip: padding-box;
+}
+
+.card:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.card .card-content {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 16px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    box-sizing: border-box;
+}
+
+.card-title {
+    padding-left: 16px;
+}
+
+.card .card-action {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 16px;
+}
+
+.card .card-action a {
+    color: #ffab40;
+    margin-right: 16px;
+    transition: color 0.3s ease;
+}
+
+.card .card-action a:hover {
+    color: #ffd8a6;
+    text-decoration: none;
 }

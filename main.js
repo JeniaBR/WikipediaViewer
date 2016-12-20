@@ -32,15 +32,12 @@ function parseWikiRespone(response) {
         link = response[3][i];
         drawWikiResponse(title, abstract, link);
     }
-
 }
 
 function drawWikiResponse(title, abstract, link) {
-    var item = '<div>' + title + '</div>';
-    item += '<div><p>' + abstract + '</p></div>';
-    item += '<div><a href="' + link + '">' + link + '</a></div>';
-
-
+    var item = '<div><div class="card"><div class="card-title"><p class="card-title">' + title + '</p></div>';
+    item += '<div class="card-content"><p>' + abstract + '</p></div>';
+    item += '<div class="card-action"><a href="' + link + '"target="new_blank"> GO TO WIKI </a></div></div></div>';
 
     $('#search-results').append('<li><div class="row">' + item + '</li></div>');
 }
