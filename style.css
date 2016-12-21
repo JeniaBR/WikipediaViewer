@@ -1,11 +1,14 @@
-header {
-    display: block;
-    background-color: violet;
+h1{
+    text-align: center;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+.jumbotron{
+    margin: 0;
 }
 
 .row {
@@ -22,6 +25,7 @@ ul {
     box-sizing: border-box;
     border-radius: 2px;
     background-clip: padding-box;
+    background-color: burlywood;
 }
 
 .card:hover {
@@ -30,28 +34,33 @@ ul {
 
 .card .card-content {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
-    padding: 16px;
+    padding: 1.5em;
     border-radius: 0 0 2px 2px;
     background-clip: padding-box;
     box-sizing: border-box;
 }
 
 .card-title {
-    padding-left: 16px;
+    padding-left: 1.5em;
+    padding-top: 0.6em;
 }
 
 .card .card-action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
-    padding: 16px;
+    padding: 1.5em;
 }
 
 .card .card-action a {
     color: #ffab40;
-    margin-right: 16px;
+    margin-right: 1.5em;
     transition: color 0.3s ease;
 }
 
 .card .card-action a:hover {
     color: #ffd8a6;
     text-decoration: none;
+}
+
+#btn-random{
+    margin-top: 1.2em;
 }

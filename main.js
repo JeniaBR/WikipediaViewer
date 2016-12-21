@@ -35,17 +35,26 @@ function parseWikiRespone(response) {
 }
 
 function drawWikiResponse(title, abstract, link) {
-    var item = '<div><div class="card"><div class="card-title"><p class="card-title">' + title + '</p></div>';
+    var item = '<div><div class="card"><div class="card-title"><p>' + title + '</p></div>';
     item += '<div class="card-content"><p>' + abstract + '</p></div>';
     item += '<div class="card-action"><a href="' + link + '"target="new_blank"> GO TO WIKI </a></div></div></div>';
 
     $('#search-results').append('<li><div class="row">' + item + '</li></div>');
 }
 
-
+function randomWiki(){
+    var url = 'https://en.wikipedia.org/wiki/Special:Random';
+    window.open(url,'_blank');
+}
 
 $(document).ready(function () {
     $('#btn-search').prop("disabled", true);
     $('#btn-search').on('click', btnHandel);
     $('#search-field').on("keyup", verifyInput);
+    $('#search-field').keypress(function (e) {
+        if (e.which == 13) {
+            btnHandel();
+        }
+    });
+    $('#btn-random').on('click',randomWiki);
 });
