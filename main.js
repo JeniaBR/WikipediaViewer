@@ -42,9 +42,9 @@ function drawWikiResponse(title, abstract, link) {
     $('#search-results').append('<li><div class="row">' + item + '</li></div>');
 }
 
-function randomWiki(){
+function randomWiki() {
     var url = 'https://en.wikipedia.org/wiki/Special:Random';
-    window.open(url,'_blank');
+    window.open(url, '_blank');
 }
 
 $(document).ready(function () {
@@ -56,5 +56,5 @@ $(document).ready(function () {
             btnHandel();
         }
     });
-    $('#btn-random').on('click',randomWiki);
+    $('#btn-random').on('click', randomWiki);
 });

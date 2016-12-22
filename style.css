@@ -1,5 +1,15 @@
-h1{
+body {
+    margin: 0;
+    background-color: #423C40;
+}
+
+h1 {
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 6em;
+    color: #FB7374;
+    margin-bottom: 1.2em;
+    margin-top: 1em;
 }
 
 ul {
@@ -7,8 +17,8 @@ ul {
     padding: 0;
 }
 
-.jumbotron{
-    margin: 0;
+input {
+    font-family: 'Space Mono', sans-serif;
 }
 
 .row {
@@ -16,8 +26,9 @@ ul {
     margin-left: 0;
 }
 
-.card {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+.btn-default {
+    font-family: 'Space Mono', sans-serif;
+    font-weight: bold;
 }
 
 .card {
@@ -25,42 +36,54 @@ ul {
     box-sizing: border-box;
     border-radius: 2px;
     background-clip: padding-box;
-    background-color: burlywood;
+    background-color: #A3CBF1;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #423C40
 }
 
 .card:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
-.card .card-content {
+.card-content {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
-    padding: 1.5em;
+    padding: 1.2em;
     border-radius: 0 0 2px 2px;
     background-clip: padding-box;
     box-sizing: border-box;
+    font-family: 'Space Mono', sans-serif;
+    font-size: 1.2em;
 }
 
 .card-title {
-    padding-left: 1.5em;
+    padding-left: 1.2em;
     padding-top: 0.6em;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-.card .card-action {
+.card-action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
-    padding: 1.5em;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
-.card .card-action a {
-    color: #ffab40;
+.card-action a {
+    color: #F5A352;
     margin-right: 1.5em;
     transition: color 0.3s ease;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-.card .card-action a:hover {
+.card-action a:hover {
     color: #ffd8a6;
     text-decoration: none;
 }
 
-#btn-random{
+#btn-random {
     margin-top: 1.2em;
 }
